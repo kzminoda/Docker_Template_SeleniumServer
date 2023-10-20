@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+   selenium_server:
+      build: ./docker/selenium_server
+      volumes:
+         - ./selenium_server:/app
+
+   selenium_chrome:
+      build: ./docker/selenium_chrome
+      ports:
+         - 4444:4444
+         - 5900:5900
+
