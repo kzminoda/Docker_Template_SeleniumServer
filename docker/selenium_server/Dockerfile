@@ -1,14 +1,14 @@
 FROM php:latest
 
-RUN apt update
-RUN apt install -y p7zip p7zip-full zip unzip zlib1g-dev libzip-dev zlib1g-dev
-RUN docker-php-ext-install zip
-
 WORKDIR /app
 RUN chmod 0777 -R /app
-RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-RUN php composer-setup.php
-RUN php -r "unlink('composer-setup.php');"
+#RUN php -r "copy('https://getcomposer.org/installer', './composer-setup.php');"
+RUN ls -l
+RUN wget https://getcomposer.org/installer
+#RUN php ./composer-setup.php
+RUN php ./installer
+#RUN php -r "unlink('./composer-setup.php');"
+RUN rm -f ./installer
 RUN mv composer.phar /usr/local/bin/composer
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
