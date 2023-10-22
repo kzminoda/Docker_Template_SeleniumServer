@@ -1,4 +1,9 @@
-# Docker_Template_SeleniumServer
+## How to Docker_Template_SeleniumServer
 
-https://qiita.com/A-Kira/items/8b9768dcafb5908004c5
+1. Move your current directory to Docker_Template_SeleniumServer directory.
 
+2. Execute the following command.
+
+   $ sudo docker-compose up
+
+3. Execute the following command and check if "Yahoo Japan!".
