@@ -10,8 +10,8 @@ services:
       - 7900:7900
   
   python:
-    build: ./python
-    container_name: Selenium_Chrome
+    build: ./docker/python
+    container_name: Selenium_Chrome_Python
     volumes: 
       - ./work:/work
     tty: true
