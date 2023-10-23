@@ -7,3 +7,11 @@
    $ sudo docker-compose up
 
 3. Execute the following command and check if "Yahoo Japan!".
+
+
+To check if your script normally works, open the following URL.
+
+http://<your host IP address>:7900/?autoconnect=1&resize=scale&password=secret 
+
+To access Selenium Grid, open the following URL.
+http://<your host IP address>:4444/
