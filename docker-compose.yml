@@ -17,3 +17,12 @@ services:
     tty: true
     depends_on:
       - selenium
+
+  php:
+    build: ./docker/php
+    container_name: Selenium_Chrome_PHP
+    volumes: 
+      - ./work:/work
+    tty: true
+    depends_on:
+      - selenium
