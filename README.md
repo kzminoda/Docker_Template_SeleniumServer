@@ -15,3 +15,7 @@ http://<your host IP address>:7900/?autoconnect=1&resize=scale&password=secret
 
 To access Selenium Grid, open the following URL.
 http://<your host IP address>:4444/
+
+
+Reference information
+https://datascience-beginer.com/docker_selenium/
